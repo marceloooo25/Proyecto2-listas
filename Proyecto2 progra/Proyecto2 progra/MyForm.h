@@ -62,7 +62,16 @@ namespace Proyecto2progra {
 	private: System::Windows::Forms::Label^ label4;
 	private: System::Windows::Forms::ComboBox^ comboBox1;
 	private: System::Windows::Forms::Button^ button1;
-	private: System::Windows::Forms::ListBox^ listBox1;
+	private: System::Windows::Forms::Label^ label5;
+	private: System::Windows::Forms::TextBox^ textBox3;
+	private: System::Windows::Forms::TextBox^ textBox4;
+	private: System::Windows::Forms::TextBox^ textBox5;
+	private: System::Windows::Forms::Label^ label6;
+	private: System::Windows::Forms::Label^ label7;
+	private: System::Windows::Forms::Label^ label8;
+	private: System::Windows::Forms::Label^ label9;
+	private: System::Windows::Forms::Label^ label10;
+
 
 
 
@@ -105,7 +114,15 @@ namespace Proyecto2progra {
 			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
 			this->button1 = (gcnew System::Windows::Forms::Button());
-			this->listBox1 = (gcnew System::Windows::Forms::ListBox());
+			this->label5 = (gcnew System::Windows::Forms::Label());
+			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox4 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox5 = (gcnew System::Windows::Forms::TextBox());
+			this->label6 = (gcnew System::Windows::Forms::Label());
+			this->label7 = (gcnew System::Windows::Forms::Label());
+			this->label8 = (gcnew System::Windows::Forms::Label());
+			this->label9 = (gcnew System::Windows::Forms::Label());
+			this->label10 = (gcnew System::Windows::Forms::Label());
 			this->tabControl1->SuspendLayout();
 			this->tabPage1->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
@@ -294,7 +311,7 @@ namespace Proyecto2progra {
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(83, 235);
+			this->button1->Location = System::Drawing::Point(81, 235);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(97, 26);
 			this->button1->TabIndex = 8;
@@ -302,20 +319,94 @@ namespace Proyecto2progra {
 			this->button1->UseVisualStyleBackColor = true;
 			this->button1->Click += gcnew System::EventHandler(this, &MyForm::button1_Click);
 			// 
-			// listBox1
+			// label5
 			// 
-			this->listBox1->FormattingEnabled = true;
-			this->listBox1->Location = System::Drawing::Point(83, 316);
-			this->listBox1->Name = L"listBox1";
-			this->listBox1->Size = System::Drawing::Size(132, 121);
-			this->listBox1->TabIndex = 9;
+			this->label5->AutoSize = true;
+			this->label5->Location = System::Drawing::Point(78, 181);
+			this->label5->Name = L"label5";
+			this->label5->Size = System::Drawing::Size(102, 13);
+			this->label5->TabIndex = 9;
+			this->label5->Text = L"Almacenar producto";
+			// 
+			// textBox3
+			// 
+			this->textBox3->Location = System::Drawing::Point(74, 267);
+			this->textBox3->Name = L"textBox3";
+			this->textBox3->Size = System::Drawing::Size(142, 20);
+			this->textBox3->TabIndex = 10;
+			// 
+			// textBox4
+			// 
+			this->textBox4->Location = System::Drawing::Point(74, 304);
+			this->textBox4->Name = L"textBox4";
+			this->textBox4->Size = System::Drawing::Size(141, 20);
+			this->textBox4->TabIndex = 11;
+			// 
+			// textBox5
+			// 
+			this->textBox5->Location = System::Drawing::Point(74, 345);
+			this->textBox5->Name = L"textBox5";
+			this->textBox5->Size = System::Drawing::Size(141, 20);
+			this->textBox5->TabIndex = 12;
+			// 
+			// label6
+			// 
+			this->label6->AutoSize = true;
+			this->label6->Location = System::Drawing::Point(3, 270);
+			this->label6->Name = L"label6";
+			this->label6->Size = System::Drawing::Size(71, 13);
+			this->label6->TabIndex = 13;
+			this->label6->Text = L"Peso unitario ";
+			// 
+			// label7
+			// 
+			this->label7->AutoSize = true;
+			this->label7->Location = System::Drawing::Point(3, 294);
+			this->label7->Name = L"label7";
+			this->label7->Size = System::Drawing::Size(67, 39);
+			this->label7->TabIndex = 14;
+			this->label7->Text = L"Cantidad de \r\nunidades a \r\nalmacenar";
+			// 
+			// label8
+			// 
+			this->label8->AutoSize = true;
+			this->label8->Location = System::Drawing::Point(12, 348);
+			this->label8->Name = L"label8";
+			this->label8->Size = System::Drawing::Size(44, 13);
+			this->label8->TabIndex = 15;
+			this->label8->Text = L"Nombre";
+			// 
+			// label9
+			// 
+			this->label9->AutoSize = true;
+			this->label9->Location = System::Drawing::Point(30, 383);
+			this->label9->Name = L"label9";
+			this->label9->Size = System::Drawing::Size(40, 13);
+			this->label9->TabIndex = 16;
+			this->label9->Text = L"Fecha:";
+			// 
+			// label10
+			// 
+			this->label10->AutoSize = true;
+			this->label10->Location = System::Drawing::Point(98, 383);
+			this->label10->Name = L"label10";
+			this->label10->Size = System::Drawing::Size(0, 13);
+			this->label10->TabIndex = 17;
 			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(897, 512);
-			this->Controls->Add(this->listBox1);
+			this->Controls->Add(this->label10);
+			this->Controls->Add(this->label9);
+			this->Controls->Add(this->label8);
+			this->Controls->Add(this->label7);
+			this->Controls->Add(this->label6);
+			this->Controls->Add(this->textBox5);
+			this->Controls->Add(this->textBox4);
+			this->Controls->Add(this->textBox3);
+			this->Controls->Add(this->label5);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->comboBox1);
 			this->Controls->Add(this->label4);
